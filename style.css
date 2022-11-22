@@ -1,0 +1,142 @@
+* {
+    background-color: #f1faee;
+}
+
+html {
+    text-align: center;
+    font-family: 'Dosis';
+  }
+
+:root {
+    --color: black; 
+}
+    
+h1 {
+    font-size: 6rem;
+    margin-bottom: 6rem;
+    margin-top: 2rem;
+}
+
+a {
+    text-decoration: none;
+    color: #e63946;
+}
+
+a:visited {
+    text-decoration: none;
+    color: #e63946;
+}
+
+input[type=range]{
+    -webkit-appearance: none;
+    padding-right: 20px;
+}
+
+input[type=range]::-webkit-slider-runnable-track {
+    width: 300px;
+    height: 5px;
+    background: #ddd;
+    border: none;
+    border-radius: 3px;
+    margin-top: -15px;
+}
+
+input[type=range]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    border: none;
+    height: 16px;
+    width: 16px;
+    border-radius: 50%;
+    background: #e63946;
+    margin-top: -4px;
+}
+
+input {
+    margin-bottom: 1rem;
+}
+
+label {
+    font-size: 1.5rem;
+}
+
+button {
+    width: 150px;
+    height: 60px;
+    font-size: 2.8rem;
+    font-family: 'dosis';
+    font-weight: bold;
+    background-color: #e63946;
+    color: black;
+    box-shadow: 3px 3px 0 black;
+    border: 0 ;
+    border-radius: 45px;
+    transition: all 0.3s;
+}
+
+button:hover {
+    box-shadow: 0 0 0 black;
+}
+
+.right {
+    float: right;
+}
+    
+.left {
+    display: inline-block;
+}
+    
+.square {
+    background-color: white;
+    border: 0 solid black;
+}
+    
+.color {   
+    background-color: var(--color);
+}
+    
+.grid-container {
+    margin-top: 0;
+    margin-right: 40px;
+    display: inline-grid;
+    grid-template-columns: repeat(16, 2fr);
+    grid-template-rows: repeat(16, 2fr);
+    border: 5px solid black;
+    border-radius: 5px;
+    height: 550px;
+    width: 550px;
+}
+
+footer {
+    margin-top: 2.6rem;
+}
+
+@media only screen and (min-width: 1700px) {
+    * {
+        font-size: 24px;
+    }
+
+    .grid-container {
+        width: 800px;
+        height: 800px;
+    }
+
+    button {
+        font-size: 2rem;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    h1 {
+        margin-top: 1rem;
+        margin-bottom: 2rem;
+        font-size: 3rem;
+    }
+    label {
+        font-size: 1rem;
+    }
+    .grid-container {
+        width: 350px;
+        height: 350px;
+        margin: 2rem auto;
+    }
+}

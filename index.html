@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Dosis&family=Spectral:wght@800&display=swap" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+    <script src="script.js" defer></script>
+    <title>Etch-A-Sketch</title>
+</head>
+<body>
+    <div class="right">
+        <div class="grid-container"></div>
+    </div>
+    <div class="page">
+        <h1>Etch-A-Sketch</h1>
+        <div class="range">
+            <label for="quantity">Grid Size:</label>
+            <input type="range" id="quantity" name="quantity" value="16" min="8" max="64" />
+            <label for="quantity" class="show-quantity">16 X 16</label>
+        </div>
+        <div class="color-picker">
+            <label for="color">Color:</label>
+            <input type="color" id="color" name="color" />
+        </div>
+        <button class="reset">RESET</button>
+    </div>
+    <footer>
+        <h2>Made by: <a href="https://soccmai.github.io/">Csokmai Robert-Sebastian</a></h2>
+    </footer>
+</body>
+</html>
